@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Textarea, Button, VStack, Text, Heading, Flex, Container, Spinner, Center } from "@chakra-ui/react";
 import { Mistral } from '@mistralai/mistralai';
-
+import Footer from './Footer';
 
 function App() {
   const [userInput, setUserInput] = useState("");
@@ -72,7 +72,7 @@ function App() {
               minH="120px"
               maxH="120px"
             />
-            <Button bg="#2563EB" color="white" w="full" _hover={{ bg: "#1D4ED8" }} onClick={generateResponse}>
+            <Button bg="#22556f" color="white" w="full" _hover={{ bg: "#22558f" }} onClick={generateResponse}>
               Generate Response
             </Button>
             {
@@ -93,6 +93,7 @@ function App() {
         </Box>
       </Flex>
     </Container>
+    <Footer/>
   </div>
   )
 }
