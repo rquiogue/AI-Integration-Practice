@@ -16,8 +16,6 @@ function App() {
       return;
     }
 
-    console.log('In generate Response')
-
     try {
       setLoading(true);
     const response = await client.chat.complete({
@@ -33,9 +31,6 @@ function App() {
     setOutput(response.choices[0].message.content);
 
     setLoading(false);
-    
-    
-    console.log(response.choices[0].message.content);
     } catch (error) {
       console.error("Error:",error);
     } 
