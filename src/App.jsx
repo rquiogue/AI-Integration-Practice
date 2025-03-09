@@ -72,7 +72,7 @@ function App() {
               minH="120px"
               maxH="120px"
             />
-            <Button bg="#22556f" color="white" w="full" _hover={{ bg: "#22558f" }} onClick={generateResponse}>
+            <Button bg="#22558f" color="white" w="full" _hover={{ bg: "#22558f" }} onClick={generateResponse}>
               Generate Response
             </Button>
             {
